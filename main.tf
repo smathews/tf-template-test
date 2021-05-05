@@ -31,9 +31,9 @@ resource "ibm_is_instance" "foobar" {
     }
 }
 
-data "ibm_is_instance" "get_foobar" {
-    name       = "foobar"
-    depends_on = [
-      ibm_is_instance.foobar,
-    ]
-}
+# data "ibm_is_instance" "get_foobar" {
+#     name       = "foobar"
+#     depends_on = [
+#       ibm_is_instance.foobar,
+#     ]
+# }
